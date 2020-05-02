@@ -13,6 +13,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { NumberAchievementsComponent } from './number-achievements/number-achievements.component';
 import { TestimonialItemComponent } from './testimonials/testimonial-item/testimonial-item.component';
 import { MainComponent } from './main/main.component';
+import { LoaderComponent } from './loader/loader.component';
+import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
+import { MailSignUpComponent } from './mail-sign-up/mail-sign-up.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { MainComponent } from './main/main.component';
     TestimonialsComponent,
     NumberAchievementsComponent,
     TestimonialItemComponent,
-    MainComponent
+    MainComponent,
+    LoaderComponent,
+    WhatWeDoComponent,
+    MailSignUpComponent
   ],
   imports: [
     BrowserModule,
