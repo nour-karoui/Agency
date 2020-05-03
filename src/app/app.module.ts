@@ -13,6 +13,14 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { NumberAchievementsComponent } from './number-achievements/number-achievements.component';
 import { TestimonialItemComponent } from './testimonials/testimonial-item/testimonial-item.component';
 import { MainComponent } from './main/main.component';
+import { LoaderComponent } from './loader/loader.component';
+import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
+import { MailSignUpComponent } from './mail-sign-up/mail-sign-up.component';
+import { BlogItemComponent } from './blog/blog-item/blog-item.component';
+import { AboutComponent } from './about/about.component';
+import { BannerPageComponent } from './banner-page/banner-page.component';
+import { PricingPageComponent } from './pricing/pricing-page/pricing-page.component';
+import { PricingItemComponent } from './pricing/pricing-item/pricing-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +34,15 @@ import { MainComponent } from './main/main.component';
     TestimonialsComponent,
     NumberAchievementsComponent,
     TestimonialItemComponent,
-    MainComponent
+    MainComponent,
+    LoaderComponent,
+    WhatWeDoComponent,
+    MailSignUpComponent,
+    BlogItemComponent,
+    AboutComponent,
+    BannerPageComponent,
+    PricingPageComponent,
+    PricingItemComponent,
   ],
   imports: [
     BrowserModule,
