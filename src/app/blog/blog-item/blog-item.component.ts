@@ -9,6 +9,7 @@ export class BlogItemComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
 }

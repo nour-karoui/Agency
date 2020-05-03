@@ -19,15 +19,14 @@ import { MailSignUpComponent } from './mail-sign-up/mail-sign-up.component';
 import { BlogItemComponent } from './blog/blog-item/blog-item.component';
 import { AboutComponent } from './about/about.component';
 import { BannerPageComponent } from './banner-page/banner-page.component';
-import { PricingPageComponent } from './pricing/pricing-page/pricing-page.component';
 import { PricingItemComponent } from './pricing/pricing-item/pricing-item.component';
 import { BlogPageComponent } from './blog/blog-page/blog-page.component';
 import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
-import { BlogItemComponent } from './blog/blog-item/blog-item.component';
-import { TestimonialItemComponent } from './testimonials/testimonial-item/testimonial-item.component';
 import { BlogPageItemComponent } from './blog/blog-page-item/blog-page-item.component';
 import { AdsComponent } from './ads/ads.component';
 import { AdItemComponent } from './ads/ad-item/ad-item.component';
+import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.component";
+
 
 @NgModule({
   declarations: [
@@ -44,7 +43,18 @@ import { AdItemComponent } from './ads/ad-item/ad-item.component';
     MainComponent,
     LoaderComponent,
     WhatWeDoComponent,
-    MailSignUpComponent
+    MailSignUpComponent,
+    AboutComponent,
+    BlogItemComponent,
+    BannerPageComponent,
+    PricingItemComponent,
+    BlogPageComponent,
+    BlogDetailComponent,
+    BlogPageItemComponent,
+    AdsComponent,
+    AdItemComponent,
+    PricingPageComponent
+
   ],
   imports: [
     BrowserModule,
