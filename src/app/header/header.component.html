@@ -40,6 +40,12 @@
     </button>
     <div class="collapse navbar-collapse" id="ftco-nav">
       <ul class="navbar-nav m-auto">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/']" class="nav-link">Home</a></li>
+        <li class="nav-item" routerLinkActive="active"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item" routerLinkActive="active"><a [routerLink]="['/ads']" class="nav-link">Ads Done</a></li>
+        <li class="nav-item" routerLinkActive="active"><a href="cases.html" class="nav-link">Case Study</a></li>
+        <li class="nav-item" routerLinkActive="active"><a [routerLink]="['/blog']" class="nav-link">Blog</a></li>
+        <li class="nav-item" routerLinkActive="active"><a href="contact.html" class="nav-link">Contact</a></li>
         <li class="nav-item active"><a [routerLink]="['/']" class="nav-link">Home</a></li>
         <li class="nav-item"><a [routerLink]="['/about']" class="nav-link">About</a></li>
         <li class="nav-item"><a [routerLink]="['/pricing']" class="nav-link">Pricing</a></li>

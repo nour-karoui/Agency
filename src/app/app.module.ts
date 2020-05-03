@@ -21,6 +21,13 @@ import { AboutComponent } from './about/about.component';
 import { BannerPageComponent } from './banner-page/banner-page.component';
 import { PricingPageComponent } from './pricing/pricing-page/pricing-page.component';
 import { PricingItemComponent } from './pricing/pricing-item/pricing-item.component';
+import { BlogPageComponent } from './blog/blog-page/blog-page.component';
+import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
+import { BlogItemComponent } from './blog/blog-item/blog-item.component';
+import { TestimonialItemComponent } from './testimonials/testimonial-item/testimonial-item.component';
+import { BlogPageItemComponent } from './blog/blog-page-item/blog-page-item.component';
+import { AdsComponent } from './ads/ads.component';
+import { AdItemComponent } from './ads/ad-item/ad-item.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +44,7 @@ import { PricingItemComponent } from './pricing/pricing-item/pricing-item.compon
     MainComponent,
     LoaderComponent,
     WhatWeDoComponent,
-    MailSignUpComponent,
-    BlogItemComponent,
-    AboutComponent,
-    BannerPageComponent,
-    PricingPageComponent,
-    PricingItemComponent,
+    MailSignUpComponent
   ],
   imports: [
     BrowserModule,
