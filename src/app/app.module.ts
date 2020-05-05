@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +11,6 @@ import { PricingComponent } from './pricing/pricing.component';
 import { BlogComponent } from './blog/blog.component';
 import { FaqComponent } from './faq/faq.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { NumberAchievementsComponent } from './number-achievements/number-achievements.component';
 import { TestimonialItemComponent } from './testimonials/testimonial-item/testimonial-item.component';
 import { MainComponent } from './main/main.component';
 import { LoaderComponent } from './loader/loader.component';
@@ -25,8 +25,9 @@ import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { BlogPageItemComponent } from './blog/blog-page-item/blog-page-item.component';
 import { AdsComponent } from './ads/ads.component';
 import { AdItemComponent } from './ads/ad-item/ad-item.component';
-import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.component";
-
+import {PricingPageComponent} from './pricing/pricing-page/pricing-page.component';
+import { AdsHomeComponent } from './ads/ads-home/ads-home.component';
+import {SafePipe} from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,6 @@ import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.componen
     BlogComponent,
     FaqComponent,
     TestimonialsComponent,
-    NumberAchievementsComponent,
     TestimonialItemComponent,
     MainComponent,
     LoaderComponent,
@@ -53,12 +53,15 @@ import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.componen
     BlogPageItemComponent,
     AdsComponent,
     AdItemComponent,
-    PricingPageComponent
+    PricingPageComponent,
+    AdsHomeComponent,
+    SafePipe,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
