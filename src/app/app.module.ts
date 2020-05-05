@@ -10,7 +10,6 @@ import { PricingComponent } from './pricing/pricing.component';
 import { BlogComponent } from './blog/blog.component';
 import { FaqComponent } from './faq/faq.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { NumberAchievementsComponent } from './number-achievements/number-achievements.component';
 import { TestimonialItemComponent } from './testimonials/testimonial-item/testimonial-item.component';
 import { MainComponent } from './main/main.component';
 import { LoaderComponent } from './loader/loader.component';
@@ -26,6 +25,9 @@ import { BlogPageItemComponent } from './blog/blog-page-item/blog-page-item.comp
 import { AdsComponent } from './ads/ads.component';
 import { AdItemComponent } from './ads/ad-item/ad-item.component';
 import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.component";
+import { ContactComponent } from './contact/contact.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -38,7 +40,6 @@ import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.componen
     BlogComponent,
     FaqComponent,
     TestimonialsComponent,
-    NumberAchievementsComponent,
     TestimonialItemComponent,
     MainComponent,
     LoaderComponent,
@@ -53,12 +54,16 @@ import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.componen
     BlogPageItemComponent,
     AdsComponent,
     AdItemComponent,
-    PricingPageComponent
+    PricingPageComponent,
+    ContactComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

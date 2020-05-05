@@ -9,12 +9,9 @@
     </div>
     <div class="row ftco-animate">
       <div class="col-md-12">
-        <div class="carousel-testimony owl-carousel ftco-owl">
-          <app-testimonial-item></app-testimonial-item>
-          <app-testimonial-item></app-testimonial-item>
-          <app-testimonial-item></app-testimonial-item>
-          <app-testimonial-item></app-testimonial-item>
-          <app-testimonial-item></app-testimonial-item>
+        <div   class="carousel-testimony owl-carousel ftco-owl" >
+          <app-testimonial-item *ngFor="let testimonial of testimonials" [testimonial]="testimonial"></app-testimonial-item>
+
         </div>
       </div>
     </div>

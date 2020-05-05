@@ -7,6 +7,7 @@ import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.componen
 import {BlogPageComponent} from './blog/blog-page/blog-page.component';
 import {BlogDetailComponent} from './blog/blog-detail/blog-detail.component';
 import {AdsComponent} from './ads/ads.component';
+import {ContactComponent} from "./contact/contact.component";
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'pricing', component: PricingPageComponent},
   {path: 'blog', component: BlogPageComponent},
   {path: 'blog/child-a', component: BlogDetailComponent},
-  {path: 'ads', component: AdsComponent}
+  {path: 'portfolio', component: AdsComponent},
+  {path: 'contact', component: ContactComponent}
 ];
 
 @NgModule({
