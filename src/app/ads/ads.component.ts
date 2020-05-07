@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ExternalFilesService} from "../_shared/services/external-files.service";
+import {ExternalFilesService} from '../_shared/services/external-files.service';
 import {Ad} from '../_shared/models/ad.model';
 import {AdService} from '../_shared/services/ad.service';
 import {Subscription} from 'rxjs';
@@ -13,11 +13,10 @@ import {Subscription} from 'rxjs';
 })
 export class AdsComponent implements OnInit {
 
-  constructor(private externalFilesService: ExternalFilesService) {}
+  constructor(private externalFilesService: ExternalFilesService, private adService: AdService) {}
   ads: Ad[] = [];
   totalAds: number;
   private subscriber: Subscription;
-  constructor(private adService: AdService) { }
 
   ngOnInit() {
     this.loadScript('../../assets/js/jquery-migrate-3.0.1.min.js');

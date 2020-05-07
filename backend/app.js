@@ -22,6 +22,7 @@ app
     res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET, OPTIONS');
     next();
   })
-  .use('/projects', adRoutes);
+  .use('/projects', adRoutes)
+  .use('/testimonials', require('./testimonials/testimonials.router'))
 
 module.exports = app;

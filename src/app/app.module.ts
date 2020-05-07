@@ -27,7 +27,6 @@ import { AdItemComponent } from './ads/ad-item/ad-item.component';
 import {PricingPageComponent} from './pricing/pricing-page/pricing-page.component';
 import { AdsHomeComponent } from './ads/ads-home/ads-home.component';
 import {SafePipe} from './safe.pipe';
-import {PricingPageComponent} from "./pricing/pricing-page/pricing-page.component";
 import { ContactComponent } from './contact/contact.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
@@ -60,6 +59,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     PricingPageComponent,
     AdsHomeComponent,
     SafePipe,
+    ContactComponent
 
   ],
   imports: [
