@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-banner-page',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner-page.component.css']
 })
 export class BannerPageComponent implements OnInit {
-
+  @Input() pageName;
   constructor() { }
 
   ngOnInit() {
