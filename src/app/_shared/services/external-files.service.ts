@@ -17,7 +17,7 @@ export class ExternalFilesService {
     this.loadScript('../assets/js/scrollax.min.js');
     // this.loadScript('../assets/js/google-map.js');
     this.loadScript('../assets/js/main.js');
-    this.loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false');
+    // this.loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false');
 
   }
 
