@@ -28,6 +28,4 @@ export class AdsComponent implements OnInit {
         this.externalFilesService = new ExternalFilesService();
       });
   }
-
-
 }

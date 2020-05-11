@@ -30,6 +30,7 @@ import {SafePipe} from './safe.pipe';
 import { ContactComponent } from './contact/contact.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     PricingPageComponent,
     AdsHomeComponent,
     SafePipe,
-    ContactComponent
+    ContactComponent,
+    PrivacyPolicyComponent
 
   ],
   imports: [
