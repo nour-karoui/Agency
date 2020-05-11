@@ -24,7 +24,7 @@ export class AdsHomeComponent implements OnInit {
         this.totalAds = projectData.adCount;
         this.ads = projectData.ads.slice(0, 3);
         console.log('this is the count ' + this.totalAds);
+        this.externalFilesService = new ExternalFilesService();
       });
   }
-
 }
