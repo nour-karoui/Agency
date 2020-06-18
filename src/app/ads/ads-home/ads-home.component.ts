@@ -17,7 +17,7 @@ export class AdsHomeComponent implements OnInit {
   constructor(private adService: AdService, private externalFilesService: ExternalFilesService) { }
 
   ngOnInit() {
-    this.adService.getAds();
+    this.adService.getAds(3, 1);
     this.subscriber = this.adService
       .getAdUpdateListener()
       .subscribe((projectData: {ads: Ad[], adCount: number}) => {

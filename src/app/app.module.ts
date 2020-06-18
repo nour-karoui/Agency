@@ -31,6 +31,7 @@ import { ContactComponent } from './contact/contact.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     AdsHomeComponent,
     SafePipe,
     ContactComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    ComingSoonComponent
 
   ],
   imports: [

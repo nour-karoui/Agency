@@ -43,7 +43,16 @@ router.post('', (req, res, next) =>{
 });
 
 router.get('', (req, res, next) =>{
-  Ad.find()
+  console.log(req.query);
+  const pageSize = +req.query.pagesize;
+  const currentPage = +req.query.currentpage;
+  const postQuery = Ad.find();
+  if(pageSize && currentPage) {
+    postQuery
+      .skip(pageSize * (currentPage - 1))
+      .limit(pageSize);
+  }
+  postQuery
     .then((documents) => {
       res.status(200).json({
         message: 'ads sent successfully',

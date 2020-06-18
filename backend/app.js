@@ -14,7 +14,6 @@ mongoose.connect('mongodb+srv://m001-student:chedy@cluster0-ltpy9.mongodb.net/te
   });
 
 app
-  .use('/images', express.static(path.join('backend/images')))
   .use(bodyParser.json())
   .use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');

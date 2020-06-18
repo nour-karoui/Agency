@@ -2,9 +2,28 @@
 
 <section class="ftco-section">
   <div class="container">
+    <div class="row justify-content-center pb-5 mb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <span class="subheading">Videos & Thumbnails</span>
+        <h2>Latest Projects Done</h2>
+      </div>
+    </div>
     <div class="row d-flex">
       <div class="col-md-4 d-flex ftco-animate" *ngFor="let ad of ads">
         <app-ad-item [ad]="ad"></app-ad-item>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col text-center">
+      <div class="block-27">
+        <ul>
+          <li (click)="previousPage()"><a>&lt;</a></li>
+          <li [ngClass]="activePage === i+1? 'active': ''" *ngFor="let item of arrayOne(number); let i = index;">
+            <a (click)="changePage(i+1)">{{ i+1 }}</a>
+          </li>
+          <li (click)="nextPage()"><a>&gt;</a></li>
+        </ul>
       </div>
     </div>
   </div>

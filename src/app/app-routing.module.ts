@@ -8,6 +8,7 @@ import {BlogDetailComponent} from './blog/blog-detail/blog-detail.component';
 import {AdsComponent} from './ads/ads.component';
 import {ContactComponent} from './contact/contact.component';
 import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
+import {ComingSoonComponent} from './coming-soon/coming-soon.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'ads', component: AdsComponent},
   {path: 'portfolio', component: AdsComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'privacy-policy', component: PrivacyPolicyComponent}
+  {path: 'privacy-policy', component: PrivacyPolicyComponent},
+  {path: 'coming-soon', component: ComingSoonComponent}
 ];
 
 @NgModule({

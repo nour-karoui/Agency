@@ -12,8 +12,9 @@ export class AdService {
 
   constructor(private http: HttpClient) {}
 
-  public getAds() {
-    this.http.get<{message: string, ads: Ad[]}>('http://localhost:3000/projects')
+  public getAds(postsPerPage: number, currentPage: number) {
+    const queryParams = `?pagesize=${postsPerPage}&currentpage=${currentPage}`;
+    this.http.get<{message: string, ads: Ad[]}>('http://localhost:3000/projects' + queryParams)
       .subscribe((adsData) => {
         this.ads = adsData.ads;
         this.adsUpdated.next({ads: [...this.ads], adCount: this.ads.length});
