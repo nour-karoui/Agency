@@ -13,7 +13,7 @@ export class AdService {
   constructor(private http: HttpClient) {}
 
   public getAds() {
-    this.http.get<{message: string, ads: Ad[]}>('/projects')
+    this.http.get<{message: string, ads: Ad[]}>('http://localhost:3000/projects')
       .subscribe((adsData) => {
         this.ads = adsData.ads;
         this.adsUpdated.next({ads: [...this.ads], adCount: this.ads.length});
