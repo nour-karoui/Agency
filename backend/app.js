@@ -25,4 +25,7 @@ app
   .use('/projects', adRoutes)
   .use('/testimonials', require('./testimonials/testimonials.router'))
 
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
+
 module.exports = app;
