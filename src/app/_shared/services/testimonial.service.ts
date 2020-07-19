@@ -20,7 +20,7 @@ export class TestimonialService {
   getTestmonials() {
     this.http
       .get<{ message: string; testimonials: any }>(
-        'testimonials'
+        '/testimonials'
       )
       .pipe(map((testimonialData) => {
         return testimonialData.testimonials.map(testimonial => {
