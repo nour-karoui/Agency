@@ -25,10 +25,10 @@ app
   .use('/projects', adRoutes)
   .use('/testimonials', require('./testimonials/testimonials.router'))
 
-app.use(express.static(process.cwd()+"/Agency/dist/agency2/"));
+app.use(express.static(process.cwd()+"/dist/agency2/"));
 
 app.get('/', (req,res) => {
-  res.sendFile(process.cwd()+"/Agency/dist/agency2/index.html")
+  res.sendFile(process.cwd()+"/dist/agency2/index.html")
 });
 
 
