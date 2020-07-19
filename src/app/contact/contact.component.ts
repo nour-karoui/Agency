@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import {ExternalFilesService} from "../_shared/services/external-files.service";
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
+  providers: [ExternalFilesService]
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private externalFilesService: ExternalFilesService) { }
 
   ngOnInit() {
   }
