@@ -1,0 +1,22 @@
+.comment-paragraph {
+  padding-right: 70px;
+  padding-left: 90px;
+}
+#explore-all-button {
+  width: 30%;
+  margin: 10px auto;
+}
+
+@media all and (max-width: 600px) {
+  .comment-paragraph {
+    padding-right: 15px;
+    padding-left: 25px;
+  }
+  #footer {
+    padding-bottom: 15px;
+  }
+  #explore-all-button {
+    width: 60%;
+  }
+}
+

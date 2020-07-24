@@ -7,7 +7,6 @@ const ExSchema = new Schema({
   origin: {type: String},
   comment: {type: String},
   country: {type: String},
-
 });
 
 module.exports = mongoose.model('Testimonial', ExSchema);

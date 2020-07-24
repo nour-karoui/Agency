@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,7 +10,6 @@ import { PricingComponent } from './pricing/pricing.component';
 import { BlogComponent } from './blog/blog.component';
 import { FaqComponent } from './faq/faq.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { TestimonialItemComponent } from './testimonials/testimonial-item/testimonial-item.component';
 import { MainComponent } from './main/main.component';
 import { LoaderComponent } from './loader/loader.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
@@ -28,8 +27,8 @@ import {PricingPageComponent} from './pricing/pricing-page/pricing-page.componen
 import { AdsHomeComponent } from './ads/ads-home/ads-home.component';
 import {SafePipe} from './safe.pipe';
 import { ContactComponent } from './contact/contact.component';
-import {HttpClientModule} from "@angular/common/http";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
@@ -44,7 +43,6 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     BlogComponent,
     FaqComponent,
     TestimonialsComponent,
-    TestimonialItemComponent,
     MainComponent,
     LoaderComponent,
     WhatWeDoComponent,
@@ -63,7 +61,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     SafePipe,
     ContactComponent,
     PrivacyPolicyComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
 
   ],
   imports: [
@@ -71,7 +69,8 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

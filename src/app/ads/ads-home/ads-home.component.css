@@ -1,0 +1,10 @@
+#explore-all-button {
+  width: 30%;
+  margin: 10px auto;
+}
+
+@media all and (max-width: 600px) {
+  #explore-all-button {
+    width: 60%;
+  }
+}

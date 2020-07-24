@@ -3,6 +3,7 @@ export class Testimonial {
               public name: string,
               public origin: string,
               public comment: string,
-              public country: string
+              public country: string,
+              public position: number
   ) {}
 }
