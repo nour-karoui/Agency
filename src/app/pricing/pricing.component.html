@@ -5,89 +5,24 @@
         <span class="subheading">Price &amp; Plans</span>
         <h2>Affordable Packages</h2>
       </div>
-    </div>
-    <div class="row owl-carousel ftco-owl">
-
-      <div class="col-md-6 col-lg-4 ftco-animate">
-        <div class="block-7">
-          <div class="text-center">
-            <span class="excerpt d-block">Basic</span>
-            <span class="price"><sup>$</sup> <span class="number">35</span> <sub>/video</sub></span>
-
-            <ul class="pricing-text mb-5">
-              <li><span class="fa fa-check mr-2"></span>Video Editing</li>
-              <li><span class="fa fa-check mr-2"></span>Scriptwriting</li>
-              <li><span class="fa fa-check mr-2"></span>Free Thumbnail</li>
-              <li><span class="fa fa-check mr-2"></span>3 Days Delivery</li>
-              <li><span class="fa fa-times mr-2" style="color: #ff190c"></span>Scroll Stopper</li>
-              <li><span class="fa fa-check mr-2"></span>1 Length Variation</li>
-              <li><span class="fa fa-check mr-2"></span>1 Size Orientation</li>
-              <li><span class="fa fa-check mr-2"></span>Royalty Free Music</li>
-              <li><span class="fa fa-check mr-2"></span>40 Seconds Running Time</li>
-            </ul>
-
-            <a href="https://www.fiverr.com/shadihammami/create-a-winning-shopify-facebook-video-ad-for-dropshipping"
-               target="_blank" class="btn btn-primary d-block px-2 py-3">Get Started</a>
+      <ngx-carousel
+        [inputs]="carouselOne"
+        class="row" >
+        <ngx-item NgxCarouselItem class="col-md-4" *ngFor="let pricing of pricings; let i=index">
+          <div class="ftco-animate">
+            <div class="block-7">
+              <div class="text-center">
+                <app-pricing-item [pricing]="pricing"></app-pricing-item>
+              </div>
+            </div>
           </div>
-        </div>
-
-      </div>
-
-      <div class="col-md-6 col-lg-4 ftco-animate">
-        <div class="block-7">
-          <div class="text-center">
-            <span class="excerpt d-block">Standard</span>
-            <span class="price"><sup>$</sup> <span class="number">40</span> <sub>/video</sub></span>
-
-            <ul class="pricing-text mb-5">
-              <li><span class="fa fa-check mr-2"></span>Video Editing</li>
-              <li><span class="fa fa-check mr-2"></span>Scriptwriting</li>
-              <li><span class="fa fa-check mr-2"></span>Free Thumbnail</li>
-              <li><span class="fa fa-check mr-2"></span>3 Days Delivery</li>
-              <li><span class="fa fa-check mr-2"></span>Scroll Stopper</li>
-              <li><span class="fa fa-check mr-2"></span>1 Length Variation</li>
-              <li><span class="fa fa-check mr-2"></span>1 Size Orientation</li>
-              <li><span class="fa fa-check mr-2"></span>Royalty Free Music</li>
-              <li><span class="fa fa-check mr-2"></span>40 Seconds Running Time</li>
-            </ul>
-
-            <a href="https://www.fiverr.com/shadihammami/create-a-winning-shopify-facebook-video-ad-for-dropshipping"
-               target="_blank" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-md-6 col-lg-4 ftco-animate">
-        <div class="block-7">
-          <div class="text-center">
-            <span class="excerpt d-block">Premium</span>
-            <span class="price"><sup>$</sup> <span class="number">55</span> <sub>/video</sub></span>
-
-            <ul class="pricing-text mb-5">
-              <li><span class="fa fa-check mr-2"></span>Video Editing</li>
-              <li><span class="fa fa-check mr-2"></span>Scriptwriting</li>
-              <li><span class="fa fa-check mr-2"></span>Free Thumbnail</li>
-              <li><span class="fa fa-check mr-2"></span>4 Days Delivery</li>
-              <li><span class="fa fa-check mr-2"></span>3 Scroll Stoppers</li>
-              <li><span class="fa fa-check mr-2"></span>1 Length Variation</li>
-              <li><span class="fa fa-check mr-2"></span>1 Size Orientation</li>
-              <li><span class="fa fa-check mr-2"></span>Royalty Free Music</li>
-              <li><span class="fa fa-check mr-2"></span>40 Seconds Running Time</li>
-            </ul>
-
-            <a href="https://www.fiverr.com/shadihammami/create-a-winning-shopify-facebook-video-ad-for-dropshipping"
-               target="_blank" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-          </div>
-        </div>
-
-      </div>
-
-
-
-
-
-
+        </ngx-item>
+        <button NgxCarouselPrev class='leftRs'>&lt;</button>
+        <button NgxCarouselNext class='rightRs'>&gt;</button>
+      </ngx-carousel>
     </div>
   </div>
 </section>
+
+
+

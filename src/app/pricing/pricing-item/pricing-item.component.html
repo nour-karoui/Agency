@@ -1,17 +1,12 @@
-  <div class="block-7">
-    <div class="text-center">
-      <span class="excerpt d-block">Personal</span>
-      <span class="price"><sup>$</sup> <span class="number">49</span> <sub>/mos</sub></span>
+<div class="pricing-item">
+  <span class="excerpt d-block">{{pricing.name}}</span>
+  <span class="price"><sup>$</sup> <span class="number">{{pricing.price}}</span> <sub>/video</sub></span>
 
-      <ul class="pricing-text mb-5">
-        <li><span class="fa fa-check mr-2"></span>Brand Strategy</li>
-        <li><span class="fa fa-times mr-2"></span>Online Marketing</li>
-        <li><span class="fa fa-check mr-2"></span>Branding Services</li>
-        <li><span class="fa fa-check mr-2"></span>Creative Marketing</li>
-        <li><span class="fa fa-check mr-2"></span>Sales Management</li>
-      </ul>
+  <ul class="pricing-text mb-5">
+    <li *ngFor="let item of pricing.included"><span class="fa fa-check mr-2"></span>{{item}}</li>
+    <li *ngIf="pricing.notIncluded"><span class="fa fa-times mr-2" style="color: #ff190c"></span>{{pricing.notIncluded}}</li>
+  </ul>
 
-      <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-    </div>
-  </div>
-
+  <a href="https://www.fiverr.com/shadihammami/create-a-winning-shopify-facebook-video-ad-for-dropshipping"
+     target="_blank" class="btn btn-primary d-block px-2 py-3">Get Started</a>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pricing-item',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pricing-item.component.css']
 })
 export class PricingItemComponent implements OnInit {
-
+  @Input() pricing;
   constructor() { }
 
   ngOnInit() {
