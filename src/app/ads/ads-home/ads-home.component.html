@@ -55,11 +55,20 @@
         <a routerLink="portfolio" id="explore-all-button" class="btn btn-primary d-block px-2 py-3">Explore All</a>
       </div>
     </div>
-    <div class="row d-flex">
-      <div class="col-md-4 d-flex ftco-animate" *ngFor="let ad of ads">
-        <app-ad-item [ad]="ad"></app-ad-item>
-      </div>
-    </div>
+<!--    <div class="row d-flex">-->
+<!--      <div class="col-md-4 d-flex ftco-animate" *ngFor="let ad of ads">-->
+<!--        <app-ad-item [ad]="ad"></app-ad-item>-->
+<!--      </div>-->
+<!--    </div>-->
+    <ngx-carousel
+      [inputs]="carouselOne"
+      class="row" >
+      <ngx-item NgxCarouselItem class="col-md-4" *ngFor="let ad of ads; let i=index">
+        <app-ad-item [ad]="ads[i]"></app-ad-item>
+      </ngx-item>
+      <button NgxCarouselPrev class='leftRs'>&lt;</button>
+      <button NgxCarouselNext class='rightRs'>&gt;</button>
+    </ngx-carousel>
   </div>
 </section>
 

@@ -8,3 +8,10 @@
     width: 60%;
   }
 }
+
+::ng-deep .carousel-control-prev-icon{
+  background-image: url('src/assets/images/arrows/prev.png');
+}
+::ng-deep .carousel-control-next-icon {
+  background-image: url('src/assets/images/arrows/next.png');
+}
