@@ -2,16 +2,45 @@
   width: 30%;
   margin: 10px auto;
 }
-
+#prev {
+  border: 0;
+  border-radius: 10px;
+  float: left;
+  background-color: #228AC3;
+  color: white;
+  font-size: 18px;
+  width: 70px;
+  position: relative;
+  top: -20px;
+  left: 40%;
+}
+#next {
+  border: 0;
+  border-radius: 10px;
+  float: right;
+  background-color: #228AC3;
+  color: white;
+  font-size: 18px;
+  width: 70px;
+  position: relative;
+  top: -20px;
+  right: 40%;
+}
+#next:hover,#prev:hover,#next:active,#prev:active {
+  font-size: 19px;
+  color: #228AC3;
+  background-color: white;
+  border: 1px solid #228AC3;
+}
 @media all and (max-width: 600px) {
+  #prev {
+    width: 50px;
+  }
+  #next {
+    width: 50px;
+  }
+
   #explore-all-button {
     width: 60%;
   }
-}
-
-::ng-deep .carousel-control-prev-icon{
-  background-image: url('src/assets/images/arrows/prev.png');
-}
-::ng-deep .carousel-control-next-icon {
-  background-image: url('src/assets/images/arrows/next.png');
 }

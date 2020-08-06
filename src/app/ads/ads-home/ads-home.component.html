@@ -66,8 +66,8 @@
       <ngx-item NgxCarouselItem class="col-md-4" *ngFor="let ad of ads; let i=index">
         <app-ad-item [ad]="ads[i]"></app-ad-item>
       </ngx-item>
-      <button NgxCarouselPrev class='leftRs'>&lt;</button>
-      <button NgxCarouselNext class='rightRs'>&gt;</button>
+      <button NgxCarouselPrev id="prev" class='leftRs'>&lt;</button>
+      <button NgxCarouselNext id="next" class='rightRs'>&gt;</button>
     </ngx-carousel>
   </div>
 </section>
